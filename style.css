@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --navbar-height: 50px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* logo and img */
+#logo {
+    margin: 0px 0px;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: rgb(238, 240, 241);
+    display: block;
+    padding: 5px 95px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background: rgba(255, 255, 255, 0.507);
+}
+
+li:hover {
+    color: black;
+}
+
+/* home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 585px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('https://t4.ftcdn.net/jpg/02/44/69/87/360_F_244698725_uWdUNY1oiaHthwcb1NK6IqtPuRNKHor2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* services section */
+.services {
+    margin-top: 400px;
+}
+
+.services h1 {
+    margin-top: 400px;
+}
+
+#services {
+    margin: -35px 0px;
+    display: flex;
+    padding: 40px;
+}
+
+#services .box {
+    border: 2px solid gray;
+    padding: 17px;
+    margin: 15px 4px;
+    background-color: rgb(214, 204, 191);
+    border-radius: 15px;
+}
+
+#services .box img {
+    height: 170px;
+    display: block;
+    margin: auto;
+
+}
+
+/* client section */
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 120px;
+    border-radius: 50%;
+}
+
+.class-items {
+    padding: 40px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url("https://image.shutterstock.com/image-photo/black-stone-cooking-background-spices-260nw-1914852676.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#client-section {
+    height: 500px;
+    position: relative;
+}
+
+#client-section h1 {
+    font-size: xx-large;
+    color: white;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url("https://c1.wallpaperflare.com/preview/551/930/440/contact-us-contact-call-us-phone-communication.jpg") no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.0rem;
+}
+
+#contact-box form {
+    width: 35%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+/* utility classes */
+.services .h-primary center {
+    font-size: 3.0rem;
+    padding: 12px;
+    margin: 0px;
+    border: 2px solid red;
+    /* margin-top: 100px; */
+}
+
+#heading {
+    font-size: xx-large;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: 2px solid wheat;
+    background-color: rgba(95, 81, 81, 0);
+    color: wheat;
+    margin: 15px;
+    font-size: 1rem;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
